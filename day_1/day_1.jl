@@ -25,9 +25,8 @@ differences = [2020 - x for x in expenses]
 solution = intersect(expenses, differences)
 
 # print the product of both values
-print("First Solution: \n")
-print(prod(solution))
-print("\n")
+println("First Solution: ", prod(solution))
+
 
 # PART 2
 # In part 2 - the goal is to find three numbers that add to 2020
@@ -41,8 +40,7 @@ for exp in expenses
     sub_differences =[sub_sum - x for x in expenses]
     sub_solution = intersect(expenses, sub_differences)
     if exp + sum(sub_solution) == 2020
-        print("Second Solution: \n")
-        print(exp * prod(sub_solution))
+        print("Second Solution: \n", exp * prod(sub_solution))
         break
     else
         continue
