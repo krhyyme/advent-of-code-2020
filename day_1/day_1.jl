@@ -2,6 +2,9 @@
 Advent of Code Day 1 Solution
 """
 
+# move to working directory
+cd("./Documents/Github/advent-of-code-2020/day_1")
+
 # PART 1
 # Find the two numbers in an array that add to 2020
 # And report the product/
